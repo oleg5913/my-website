@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  overflow-x: hidden; }
+
+body {
+  scroll-behavior: smooth; }
+
+body * {
+  overflow-y: hidden; }
+
+a {
+  text-decoration: none; }
+
+.welcomeSection {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  background-image: url("../img/welcomeBg.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+header {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  padding: 2vw 0;
+  align-items: center; }
+
+.headerNav {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.headerNav p {
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  font-size: 3vh; }
+
+.headerSocialNetworks {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.headerSocialNetworks img {
+  width: 3vw; }
+
+.welcomeContent {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 9; }
+
+.welcomeContentText {
+  width: 50vw;
+  padding: 0 0 4vw 4vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 0; }
+
+.welcomeContentText h1, h2 {
+  font-family: Montserrat, sans-serif;
+  color: white;
+  font-weight: 300;
+  width: max-content;
+  z-index: 1; }
+
+.welcomeContentText div {
+  background-color: #4b3d29;
+  height: 2vh;
+  width: 32.5vw;
+  margin: -1vw 0 0 4vw;
+  z-index: -1; }
+
+.welcomeContentImage {
+  width: 50vw;
+  display: flex;
+  justify-content: center; }
+
+.welcomeContentImage img {
+  width: 25vw; }
+
+.aboutMeSection {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+.aboutMeWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch; }
+
+.aboutMeTitle {
+  width: 25vw;
+  padding: 1vw;
+  margin: 4vw;
+  font-family: Montserrat, sans-serif;
+  color: #fdb650;
+  font-size: 4vh;
+  font-weight: 500;
+  border-right: 0.5vw solid #fdb650; }
+
+.aboutMeContent {
+  padding-left: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.aboutMeContent img {
+  width: 22.22222vw;
+  border-width: 1vw 1vw 3vw 1vw;
+  border-style: solid;
+  border-color: #fdb650; }
+
+.aboutMeText {
+  padding-right: 4vw;
+  margin-left: 4vw;
+  border-bottom: 0.5vw solid #fdb650; }
+
+.aboutMeText p {
+  font-family: Montserrat, sans-serif;
+  font-size: 3vh;
+  width: 60vw;
+  margin: 1vw 0;
+  font-weight: 300; }
+
+.aboutMeText img {
+  width: 2vw;
+  margin-left: 0.5vw; }
+
+.myProjectsSection {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+.myProjectsTitle {
+  width: 25vw;
+  padding: 1vw;
+  margin: 2vw 4vw;
+  font-family: Montserrat, sans-serif;
+  font-size: 4vh;
+  color: #fdb650;
+  font-weight: 500;
+  border-right: 0.5vw solid #fdb650; }
+
+.myProjectsContent {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.myProjectsContent div {
+  width: 23vw;
+  height: 15vw;
+  margin: 2vw 4vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 0.1vh solid black;
+  border-radius: 0.5vh; }
+
+#project1 {
+  background-image: url(../img/project1.png); }
+
+#project2 {
+  background-image: url(../img/project2.png); }
+
+#project3 {
+  background-image: url(../img/project3.png); }
+
+#project4 {
+  background-image: url(../img/project4.png); }
+
+#project5 {
+  background-image: url(../img/project5.png); }
+
+#project6 {
+  background-image: url(../img/project6.png); }
+
+.myContactsSection {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(../img/contactsBg.png);
+  background-size: cover;
+  background-position: center center; }
+
+.myContactsTitle {
+  width: 25vw;
+  padding: 1vw;
+  margin: 2vw 4vw;
+  font-family: Montserrat, sans-serif;
+  font-size: 4vh;
+  color: #fdb650;
+  font-weight: 500;
+  border-right: 0.5vw solid #fdb650; }
+
+.myContactsContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 35vw;
+  height: 80vh;
+  margin-left: 4vw;
+  padding-left: 2vw;
+  background-color: #fff;
+  border: 0.5vh solid #fdb650; }
+
+.myContactsContent img {
+  width: 4vw; }
+
+.myContactsContent div {
+  width: 33.33333vw;
+  height: 25vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.myContactsContent div div {
+  width: 7.14286vw;
+  height: 7.14286vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdb650;
+  border-radius: 50%;
+  margin-right: 2vw; }
+
+.myContactsContent div p {
+  font-family: Montserrat, sans-serif;
+  font-size: 3vh; }
+
+footer {
+  text-align: center;
+  margin-top: 4vw; }
+
+footer p {
+  font-family: Montserrat, sans-serif;
+  font-size: 3vh;
+  font-weight: 300;
+  margin: 1vw; }
+
+@media screen and (min-width: 500px) and (max-width: 1025px) {
+  .headerNav p {
+    font-size: 1vh; }
+  .welcomeContentText h1 {
+    font-size: 2vh; }
+  .welcomeContentText h2 {
+    font-size: 2vh; }
+  .aboutMeTitle {
+    font-size: 2vh; }
+  .aboutMeText p {
+    font-size: 1vh; }
+  .myProjectsTitle {
+    font-size: 2vh; }
+  .myContactsTitle {
+    font-size: 2vh; }
+  .myContactsContent div p {
+    font-size: 1vh; }
+  footer p {
+    font-size: 1vh; }
+  .welcomeSection {
+    height: 50vh;
+    background-position: center center; }
+  .welcomeContentText div {
+    height: 1vh; }
+  .aboutMeSection {
+    height: 50vh;
+    justify-content: center; }
+  .myProjectsSection {
+    justify-content: center;
+    height: 50vh; }
+  .myContactsSection {
+    justify-content: center;
+    height: 50vh; } }
+
+@media screen and (max-width: 499px) {
+  .headerNav p {
+    font-size: 1vh; }
+  .welcomeContentText h1 {
+    font-size: 1vh; }
+  .welcomeContentText h2 {
+    font-size: 1.6vh; }
+  .aboutMeTitle {
+    font-size: 1.6vh; }
+  .aboutMeText p {
+    font-size: 1vh; }
+  .myProjectsTitle {
+    font-size: 1.6vh; }
+  .myContactsTitle {
+    font-size: 1.6vh; }
+  .myContactsContent div p {
+    font-size: 1vh; }
+  footer p {
+    font-size: 1vh; }
+  .welcomeSection {
+    height: 50vh;
+    background-position: center center; }
+  .welcomeContentText div {
+    height: 0.5vh;
+    width: 22vw;
+    margin: -0.5vw 0 0 2.5vw; }
+  .aboutMeSection {
+    height: 50vh;
+    justify-content: center; }
+  .myProjectsSection {
+    justify-content: center;
+    height: 50vh; }
+  .myContactsSection {
+    justify-content: space-evenly;
+    height: 50vh; }
+  .myContactsContent {
+    flex-direction: column;
+    height: 30vh; }
+  .myContactsContent div {
+    width: 33.33333vw;
+    height: 16.66667vw; }
+  .myContactsContent img {
+    width: 4vw; } }
